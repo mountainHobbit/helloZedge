@@ -47,6 +47,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello, world!\n")
 	fmt.Fprintf(w, "Version: 1.0.4\n")
 	fmt.Fprintf(w, "Hostname: %s\n", host)
+	fmt.Fprintf(w, "This is a test.\n")
 }
 
 // [END container_hello_app]
