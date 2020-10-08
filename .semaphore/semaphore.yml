@@ -1,0 +1,18 @@
+version: v1.0
+name: Docker
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Build Image
+    task:
+      jobs:
+        - name: docker build
+          commands:
+            - cd hello-app
+            - checkout
+            - docker build -t your-image .
+      env_vars:
+        - name: PROJECT_ID
+          value: noted-strength-291808
