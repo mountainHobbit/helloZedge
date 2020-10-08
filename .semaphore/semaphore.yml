@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: docker build
           commands:
-            - cd hello-app
+            - cd /hello-app
             - checkout
             - docker build -t your-image .
       env_vars:
