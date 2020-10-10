@@ -44,10 +44,10 @@ func main() {
 func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
 	host, _ := os.Hostname()
-	fmt.Fprintf(w, "Hello, world!\n")
-	fmt.Fprintf(w, "Version: 2.0.0\n")
+	fmt.Fprintf(w, "Hello Zedge!!\n")
+	fmt.Fprintf(w, "Version: 1.2.3\n")
 	fmt.Fprintf(w, "Hostname: %s\n", host)
-	fmt.Fprintf(w, "This is the best test!.\n")
+	fmt.Fprintf(w, "Stable Prod Build.\n")
 }
 
 // [END container_hello_app]
